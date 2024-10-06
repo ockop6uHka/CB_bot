@@ -38,8 +38,8 @@ def valid_name_check(n):
 
 
 @bot.message_handler(commands=['start'])
-def welcome(msg):  # неудачное название переменной
-    bot.reply_to(msg, "Добрый день. Как вас зовут? ")  # Лишние пробелы
+def welcome(msg):
+    bot.reply_to(msg, "Добрый день. Как вас зовут? ")
 
 
 @bot.message_handler(func=lambda message: True)
